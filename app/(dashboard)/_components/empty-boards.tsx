@@ -6,10 +6,12 @@ import { Button } from "@/components/ui/button"
 import { api } from "@/convex/_generated/api"
 import { UseApiMutation } from "@/hooks/use-api-mutation"
 import { toast } from "sonner"
+import { useRouter } from "next/navigation"
 
 export function EmptyBoards() {
   const { organization } = useOrganization()
   const { mutate, pending } = UseApiMutation(api.board.create)
+  const router = useRouter()
 
   const onClick = () => {
     if (!organization) return
@@ -21,7 +23,7 @@ export function EmptyBoards() {
     })
       .then((id) => {
         toast.success("Board created")
-        // TODO: redirect to the board id
+        router.push(`/board/${id}`)
       })
       .catch(() => {
         toast.error("Failed to create board")
