@@ -1,15 +1,14 @@
-import { Skeleton } from "@/components/ui/skeleton"
 
-export function Participants(){
-    return(
+export function Participants() {
+    return (
         <div className="absolute h-12 top-2 right-2 bg-white rounded-md p-3 flex items-center shadow-md">
             List of users
         </div>
     )
 }
 
-Participants.Skeleton = function ParticipantsSkeleton(){
-    return(
-        <div className="absolute h-12 top-2 right-2 bg-white rounded-md p-3 flex items-center shadow-md w-[100px]"/>
+export const ParticipantsSkeleton = () => {
+    return (
+        <div className="absolute h-12 top-2 right-2 bg-white rounded-md p-3 flex items-center shadow-md w-[100px]" />
     )
 }
