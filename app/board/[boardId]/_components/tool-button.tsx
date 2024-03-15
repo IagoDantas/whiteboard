@@ -3,7 +3,6 @@
 import { LucideIcon } from "lucide-react"
 import { Hint } from "@/components/hint"
 import { Button } from "@/components/ui/button"
-import { Icon } from "next/dist/lib/metadata/types/metadata-types";
 
 
 interface ToolButtonProps {
