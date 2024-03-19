@@ -1,4 +1,4 @@
-# A real time a Real-Time Miro Clone With Nextjs, React, Tailwind (2024)
+# A real time a Real-Time Miro Clone With Nextjs, React, Tailwind
 
 https://github.com/IagoDantas/whiteboard/assets/82843173/c630fafa-9508-461f-811d-d29b78da21d4
 
